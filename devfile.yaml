@@ -8,7 +8,7 @@ metadata:
   projectType: "nodejs"
   language: "nodejs"
   attributes:
-    alpha.dockerimage-port: 3001
+    alpha.dockerimage-port: 3030
   provider: Red Hat
   supportUrl: https://github.com/devfile-samples/devfile-support#support-information
 parent:
