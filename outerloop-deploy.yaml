@@ -17,7 +17,7 @@ spec:
           image: nodejs-image:latest
           ports:
             - name: http
-              containerPort: 3001
+              containerPort: 3030
               protocol: TCP
           resources:
             limits:
