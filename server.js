@@ -52,9 +52,10 @@ const pino = require('pino')({
 app.use(require('pino-http')({logger: pino}));
 
 app.get('/', (req, res) => {
+  const PORT = process.env.PORT
   // Use req.log (a `pino` instance) to log JSON:
   req.log.info({message: 'Hello from Node.js Starter Application!!!'});
-  res.send('!!!! Hello from Node.js Starter Application - @SM !!!!');
+  res.send('Hello from Node.js Application listening on port ${PORT} - dev by SM @2022');
 });
 
 app.get('*', (req, res) => {
